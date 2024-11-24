@@ -131,20 +131,20 @@ input {
   transform: translateY(-2px);
 }
 
+#saveContactBtn{
+    overflow: hidden;
+    padding: 10px 10px;
+}
+
 #saveContactBtn i {
   font-size: 1.5rem;
   margin-right: 1rem;
 }
 
-#saveContactBtn h3 {
-  margin: 0;
-  font-size: 1.1rem;
-  font-weight: bold;
-}
 
-#saveContactBtn p {
+#saveContactBtn input {
   margin: 0;
-  font-size: 0.9rem;
+  min-width: 300px;
   opacity: 0.8;
 }
 
