@@ -48,6 +48,7 @@ body {
 
 
 body {
+  padding-top: 50px;
   scrollbar-width: thin;
   scrollbar-color: #888 #444;
 }
@@ -102,6 +103,12 @@ body {
   background: #ffffff33;
 }
 
+input{
+    padding: 10px;
+    background-color: #ffffff1a;
+    color: #fff;
+    min-width: 400px;
+}
 
 .social-links ul li a {
   display: flex;
@@ -138,7 +145,6 @@ body {
 }
 
 #saveContactBtn:hover {
-  background-color: #3570bd;
   transform: translateY(-2px);
 }
 
@@ -184,4 +190,32 @@ body {
 }
 .twitter {
   background-color: #1da1f2;
+}
+/* Assuming you have a style.css file */
+.input-field {
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+}
+
+.dynamic-links {
+    margin-top: 20px;
+}
+
+.link-input {
+    margin-bottom: 10px;
+}
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 1s ease, margin-bottom 1s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    margin-bottom: 15px;
 }

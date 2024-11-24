@@ -32,13 +32,15 @@
                             <li class="twitter">
                                 <a href="https://twitter.com" target="_blank">
                                     <i class="fa fa-link"></i>
-                                    <input type="url" name="social-links[]" placeholder="https://your-link.com" />
+                                    <input type="url" name="social-links[]" placeholder="https://your-link.com"/>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <button type="button" id="add-link-btn">Add Another Link</button>
+                <center>
+                    <button type="button" id="add-link-btn">Add Another Link</button>
+                </center>
             </div>
 
             <!-- Save Contact Button -->
@@ -46,8 +48,9 @@
                 <button type="submit" id="saveContactBtn">
                     <i class="fas fa-address-book"></i>
                     <div>
-                        <h3>Save Contact</h3>
-                        <p>Add me to your address book</p>
+                        <input type="email" name="email" placeholder="Email" class="input-field">
+                        <input type="tel" name="phone" placeholder="Phone" class="input-field">
+                        <input type="text" name="address" placeholder="Address" class="input-field">
                     </div>
                 </button>
             </div>
@@ -72,16 +75,6 @@
                 };
                 reader.readAsDataURL(file);
             }
-        });
-
-        // JavaScript for save contact button functionality
-        document.getElementById('saveContactBtn').addEventListener('click', function () {
-            Swal.fire({
-                title: 'Contact Saved!',
-                text: 'My contact has been added to your address book.',
-                icon: 'success',
-                customClass: 'swal-wide',
-            });
         });
 
         // JavaScript to dynamically add more input fields for social links
